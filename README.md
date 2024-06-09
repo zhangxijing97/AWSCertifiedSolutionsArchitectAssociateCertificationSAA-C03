@@ -70,8 +70,9 @@ A tool that enables you to interact with AWS services using commands in your com
 • Language-specific APIs (set of libraries)<br>
 • Enables you to access and manage AWS services programmatically<br>
 • Embedded within your application<br>
-• Supports<br>
-    • SDKs(JavaScript,Python,PHP,.NET,Ruby,Java,Go,Node.js, C++)<br>
-    • Mobile SDKs (Android, iOS, ...)<br>
-    • IoT Device SDKs (Embedded C, Arduino, ...)<br>
+
+Supports:<br>
+• SDKs(JavaScript,Python,PHP,.NET,Ruby,Java,Go,Node.js, C++)<br>
+• Mobile SDKs (Android, iOS, ...)<br>
+• IoT Device SDKs (Embedded C, Arduino, ...)<br>
 • Example: AWS CLI is built on AWS SDK for Python<br>
