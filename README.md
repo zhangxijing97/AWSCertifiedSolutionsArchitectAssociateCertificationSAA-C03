@@ -24,8 +24,9 @@ Statements consists of: <br>
 • Action: list of actions this policy allows or denies<br>
 • Resource: list of resources to which the actions applied to<br>
 • Condition: conditions for when this policy is ineffect (optional)<br>
+
+IAMReadOnlyAccess Example:<br>
 ```
-<!-- IAMReadOnlyAccess -->
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -46,3 +47,16 @@ Statements consists of: <br>
 ```
 
 ### Multi Factor Authentication - MFA
+MFA = password you know + security device you own<br>
+
+Virtual MFA device<br>
+• Google Authenticator<br>
+• Authy<br>
+
+Universal 2nd Factor (U2F) Security Key<br>
+• YubiKey by Yubico (3rd party)<br>
+
+### How can users access AWS?
+• AWS Management Console (protected by password + MFA)<br>
+• AWS Command Line Interface (CLI): protected by access keys<br>
+• AWS Software Developer Kit (SDK) - for code: protected by access keys<br>
