@@ -60,3 +60,18 @@ Universal 2nd Factor (U2F) Security Key<br>
 • AWS Management Console (protected by password + MFA)<br>
 • AWS Command Line Interface (CLI): protected by access keys<br>
 • AWS Software Developer Kit (SDK) - for code: protected by access keys<br>
+
+#### What’s the AWS CLI?
+CLI: Command Line Interface<br>
+A tool that enables you to interact with AWS services using commands in your command-line shell<br>
+
+#### What’s the AWS SDK?
+• AWS Software Development Kit (AWS SDK)<br>
+• Language-specific APIs (set of libraries)<br>
+• Enables you to access and manage AWS services programmatically<br>
+• Embedded within your application<br>
+• Supports<br>
+    • SDKs(JavaScript,Python,PHP,.NET,Ruby,Java,Go,Node.js, C++)<br>
+    • Mobile SDKs (Android, iOS, ...)<br>
+    • IoT Device SDKs (Embedded C, Arduino, ...)<br>
+• Example: AWS CLI is built on AWS SDK for Python<br>
