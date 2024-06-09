@@ -118,3 +118,22 @@ List IAM Policies
 ```
 aws iam list-policies
 ```
+
+### IAM Roles for Services
+• Some AWS service will need to perform actions on your behalf<br>
+• To do so, we will assign permissions to AWS services with IAM Roles<br>
+
+Common roles:<br>
+• EC2 Instance Roles<br>
+• Lambda Function Roles<br>
+• Roles for CloudFormation<br>
+
+### IAM Security Tools
+IAM Credentials Report (account-level)<br>
+• a report that lists all your account's users and the status of their various
+credentials<br>
+
+IAM Access Advisor (user-level)<br>
+• Access advisor shows the service permissions granted to a user and when those
+services were last accessed.<br>
+• You can use this information to revise your policies.<br>
