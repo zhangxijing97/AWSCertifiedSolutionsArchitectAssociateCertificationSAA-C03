@@ -76,3 +76,45 @@ Supports:<br>
 • Mobile SDKs (Android, iOS, ...)<br>
 • IoT Device SDKs (Embedded C, Arduino, ...)<br>
 • Example: AWS CLI is built on AWS SDK for Python<br>
+
+#### AWS CLI Hands On?
+```
+aws configure
+AWS Access Key ID [None]: Access key
+AWS Secret Access Key [None]: Secret access key
+Default region name [None]: us-west-1
+Default output format [None]: 
+(base) zhangxijing@Xijings-MacBook-Air ~ % aws iam list-users
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "xijing",
+            "UserId": "AIDA4MTWNLEX7DI3CBOVM",
+            "Arn": "arn:aws:iam::851725605167:user/xijing",
+            "CreateDate": "2024-06-08T23:31:02+00:00",
+            "PasswordLastUsed": "2024-06-08T23:53:09+00:00"
+        }
+    ]
+}
+```
+
+List IAM Users
+```
+aws iam list-users
+```
+
+Create a New IAM User
+```
+aws iam create-user --user-name newusername
+```
+
+Attach a Policy to an IAM User
+```
+aws iam attach-user-policy --user-name newusername --policy-arn arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
+```
+
+List IAM Policies
+```
+aws iam list-policies
+```
