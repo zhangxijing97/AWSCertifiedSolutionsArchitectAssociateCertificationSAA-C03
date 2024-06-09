@@ -24,3 +24,25 @@ Statements consists of: <br>
 • Action: list of actions this policy allows or denies<br>
 • Resource: list of resources to which the actions applied to<br>
 • Condition: conditions for when this policy is ineffect (optional)<br>
+```
+<!-- IAMReadOnlyAccess -->
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:GenerateCredentialReport",
+                "iam:GenerateServiceLastAccessedDetails",
+                "iam:Get*",
+                "iam:List*",
+                "iam:SimulateCustomPolicy",
+                "iam:SimulatePrincipalPolicy"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+### Multi Factor Authentication - MFA
