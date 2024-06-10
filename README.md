@@ -137,3 +137,14 @@ IAM Access Advisor (user-level)<br>
 • Access advisor shows the service permissions granted to a user and when those
 services were last accessed.<br>
 • You can use this information to revise your policies.<br>
+
+### IAM Section – Summary
+• Users: mapped to a physical user, has a password for AWS Console<br>
+• Groups: contains users only<br>
+• Policies: JSON document that outlines permissions for users or groups<br>
+• Roles: for EC2 instances or AWS services<br>
+• Security: MFA + Password Policy<br>
+• AWS CLI: manage your AWS services using the command-line<br>
+• AWS SDK: manage your AWS services using a programming language<br>
+• Access Keys: access AWS using the CLI or SDK<br>
+• Audit: IAM Credential Reports & IAM Access Advisor<br>
