@@ -3,6 +3,7 @@
 ## Table of Contents
 
 1. [IAM & AWS CLI](#1-IAM-and-AWS-CLI)
+2. [Amazon EC2 Basics](#2-Amazon-EC2-Basics)
 
 ## 1. IAM and AWS CLI
 ### IAM: Users & Groups
@@ -148,3 +149,32 @@ services were last accessed.<br>
 • AWS SDK: manage your AWS services using a programming language<br>
 • Access Keys: access AWS using the CLI or SDK<br>
 • Audit: IAM Credential Reports & IAM Access Advisor<br>
+
+## 2. Amazon EC2 Basics
+EC2 = Elastic Compute Cloud = Infrastructure as a Service<br>
+
+### EC2 sizing & configuration options
+• Operating System (OS): Linux, Windows or Mac OS<br>
+• How much compute power & cores (CPU)<br>
+• How much random-access memory (RAM)<br>
+• How much storage space: Network-attached (EBS & EFS), hardware (EC2 Instance Store)<br>
+• Network card: speed of the card, Public IP address<br>
+• Firewall rules: security group<br>
+• Bootstrap script (configure at first launch): EC2 User Data<br>
+
+#### Amazon EBS (Elastic Block Store)
+• Persistent storage that retains data after instance termination<br>
+• High performance for both throughput and IOPS (input/output operations per second)<br>
+• Snapshots for backup and restore operations<br>
+• Ability to resize volumes on the fly without downtime<br>
+
+#### Amazon EFS (Elastic File System)
+• Shared file storage with automatic scaling<br>
+• High availability and durability<br>
+• Integration with other AWS services<br>
+• Support for multiple AZs (Availability Zones), providing high availability<br>
+
+#### Hardware Storage
+• High I/O performance since the storage is directly attached to the instance<br>
+• Temporary storage that is deleted when the instance is stopped, terminated, or rebooted<br>
+• No additional cost since it is included with the instance<br>
