@@ -204,19 +204,19 @@ echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
 ```
 
 #### Bash
-Bash (Bourne Again SHell) is a Unix shell and command language. It is widely used as the default login shell for many Linux distributions and macOS.
+Bash (Bourne Again SHell) is a Unix shell and command language. It is widely used as the default login shell for many Linux distributions and macOS.<br>
 
-Common Bash Commands:
-ls: List directory contents.
-cd: Change the current directory.
-pwd: Print the working directory.
-cp: Copy files and directories.
-mv: Move or rename files and directories.
-rm: Remove files or directories.
-echo: Display a line of text.
-grep: Search text using patterns.
-awk and sed: Text processing tools.
-chmod: Change file permissions.
-chown: Change file ownership.
-ps: Display current processes.
-kill: Terminate a process.
+Common Bash Commands:<br>
+ls: List directory contents.<br>
+cd: Change the current directory.<br>
+pwd: Print the working directory.<br>
+cp: Copy files and directories.<br>
+mv: Move or rename files and directories.<br>
+rm: Remove files or directories.<br>
+echo: Display a line of text.<br>
+grep: Search text using patterns.<br>
+awk and sed: Text processing tools.<br>
+chmod: Change file permissions.<br>
+chown: Change file ownership.<br>
+ps: Display current processes.<br>
+kill: Terminate a process.<br>
