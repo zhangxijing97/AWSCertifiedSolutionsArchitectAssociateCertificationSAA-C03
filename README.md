@@ -180,11 +180,9 @@ EC2 = Elastic Compute Cloud = Infrastructure as a Service<br>
 • No additional cost since it is included with the instance<br>
 
 ### EC2 Instance Setup Script
-
 This repository contains a Bash script designed to automate the setup and configuration of an Apache HTTP Server (`httpd`) on an AWS EC2 instance running Amazon Linux 2. The script performs package updates, installs `httpd`, starts the server, ensures it starts on boot, and creates a simple "Hello World" web page.
 
 #### Script Overview
-
 The script performs the following tasks:
 
 1. Updates all installed packages to their latest versions.
@@ -194,7 +192,6 @@ The script performs the following tasks:
 5. Creates a basic HTML file in the web server's document root, displaying "Hello World" along with the instance's fully qualified domain name (FQDN).
 
 #### Script
-
 ```bash
 #!/bin/bash
 # Use this for your user data (script from top to bottom)
@@ -205,3 +202,21 @@ systemctl start httpd
 systemctl enable httpd
 echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
 ```
+
+#### Bash
+Bash (Bourne Again SHell) is a Unix shell and command language. It is widely used as the default login shell for many Linux distributions and macOS.
+
+Common Bash Commands:
+ls: List directory contents.
+cd: Change the current directory.
+pwd: Print the working directory.
+cp: Copy files and directories.
+mv: Move or rename files and directories.
+rm: Remove files or directories.
+echo: Display a line of text.
+grep: Search text using patterns.
+awk and sed: Text processing tools.
+chmod: Change file permissions.
+chown: Change file ownership.
+ps: Display current processes.
+kill: Terminate a process.
