@@ -178,3 +178,30 @@ EC2 = Elastic Compute Cloud = Infrastructure as a Service<br>
 • High I/O performance since the storage is directly attached to the instance<br>
 • Temporary storage that is deleted when the instance is stopped, terminated, or rebooted<br>
 • No additional cost since it is included with the instance<br>
+
+### EC2 Instance Setup Script
+
+This repository contains a Bash script designed to automate the setup and configuration of an Apache HTTP Server (`httpd`) on an AWS EC2 instance running Amazon Linux 2. The script performs package updates, installs `httpd`, starts the server, ensures it starts on boot, and creates a simple "Hello World" web page.
+
+#### Script Overview
+
+The script performs the following tasks:
+
+1. Updates all installed packages to their latest versions.
+2. Installs the Apache HTTP Server (`httpd`).
+3. Starts the Apache HTTP Server immediately.
+4. Enables the Apache HTTP Server to start on boot.
+5. Creates a basic HTML file in the web server's document root, displaying "Hello World" along with the instance's fully qualified domain name (FQDN).
+
+#### Script
+
+```bash
+#!/bin/bash
+# Use this for your user data (script from top to bottom)
+# install httpd (Linux 2 version)
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
+```
