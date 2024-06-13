@@ -220,3 +220,16 @@ chmod: Change file permissions.<br>
 chown: Change file ownership.<br>
 ps: Display current processes.<br>
 kill: Terminate a process.<br>
+
+### EC2 Instance Types
+Great website: https://instances.vantage.sh<br>
+
+### Security Groups
+
+#### Classic Ports to know
+• 22 = SSH (Secure Shell) - log into a Linux instance<br>
+• 21 = FTP (File Transfer Protocol) – upload files into a file share<br>
+• 22 = SFTP (Secure File Transfer Protocol) – upload files using SSH<br>
+• 80 = HTTP – access unsecured websites<br>
+• 443 = HTTPS – access secured websites<br>
+• 3389 = RDP (Remote Desktop Protocol) – log into a Windows instance<br>
