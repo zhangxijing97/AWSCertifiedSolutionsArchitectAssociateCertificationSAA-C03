@@ -204,7 +204,7 @@ echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
 ```
 
 #### Bash
-Bash (Bourne Again SHell) is a Unix shell and command language. It is widely used as the default login shell for many Linux distributions and macOS.<br>
+Bash (Bourne Again Shell) is a Unix shell and command language. It is widely used as the default login shell for many Linux distributions and macOS.<br>
 
 Common Bash Commands:<br>
 ls: List directory contents.<br>
@@ -243,3 +243,19 @@ They regulate:<br>
 • 80 = HTTP – access unsecured websites<br>
 • 443 = HTTPS – access secured websites<br>
 • 3389 = RDP (Remote Desktop Protocol) – log into a Windows instance<br>
+
+### SSH
+#### Shell
+A shell is a command-line interface that allows users to interact with an operating system by typing commands. It interprets these commands and executes them. Shells can be used for:<br>
+• Running Commands: Directly executing commands like ls to list files.<br>
+• Scripting: Writing scripts to automate tasks, e.g., backup scripts.<br>
+• Managing Files: Copying, moving, and deleting files.<br>
+• Process Control: Starting, stopping, and managing processes.<br>
+Common types of shells include Bash (most popular), sh, csh, and zsh.<br>
+
+#### SSH
+SSH (Secure Shell) is a protocol for securely accessing and managing remote computers over a network. It provides:<br>
+• Secure Remote Login: Log into another computer and execute commands securely.<br>
+• Encrypted Communication: Protects data in transit using encryption.<br>
+• File Transfer: Securely transfer files using tools like scp and sftp.<br>
+• Port Forwarding: Securely forward network traffic.<br>
