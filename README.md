@@ -225,6 +225,16 @@ kill: Terminate a process.<br>
 Great website: https://instances.vantage.sh<br>
 
 ### Security Groups
+• Security Groups are the fundamental of network security in AWS<br>
+• They control how traffic is allowed into or out of our EC2 Instances<br>
+• Security groups only contain rules<br>
+• Security groups rules can reference by IP or by security group<br>
+
+They regulate:<br>
+• Access to Ports<br>
+• Authorised IP ranges – IPv4 and IPv6<br>
+• Control of inbound network (from other to the instance)<br>
+• Control of outbound network (from the instance to other)<br>
 
 #### Classic Ports to know
 • 22 = SSH (Secure Shell) - log into a Linux instance<br>
