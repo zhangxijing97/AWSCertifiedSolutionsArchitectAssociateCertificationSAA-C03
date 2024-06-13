@@ -78,6 +78,9 @@ Supports:<br>
 • IoT Device SDKs (Embedded C, Arduino, ...)<br>
 • Example: AWS CLI is built on AWS SDK for Python<br>
 
+#### How to get Access Key ID and Secret Access Key
+IAM > Users > xijing > Security credentials > Access keys > Create access key<br>
+
 #### AWS CLI Hands On?
 ```
 aws configure
@@ -260,15 +263,18 @@ SSH (Secure Shell) is a protocol for securely accessing and managing remote comp
 • File Transfer: Securely transfer files using tools like scp and sftp.<br>
 • Port Forwarding: Securely forward network traffic.<br>
 
+#### How to get EC2Tutorial.pem
+EC2 > Network & Security > Key Pairs > Create key pair<br>
+
 #### How to SSH into EC2 Instance
 Initial SSH Attempt<br>
+Warning: 'Permissions 0644 for 'EC2Tutorial.pem' are too open.': The permissions on the private key file are too permissive. SSH requires that private key files are not accessible by others for security reasons.<br>
 ```
 ssh -i EC2Tutorial.pem ec2-user@18.144.86.136
 ```
-Warning: 'Permissions 0644 for 'EC2Tutorial.pem' are too open.': The permissions on the private key file are too permissive. SSH requires that private key files are not accessible by others for security reasons.<br>
 
-
-Fixing Permissions, Changes the permissions of the file to be readable only by the owner. This is required to ensure the private key file is secure.<br>
+Fixing Permissions<br>
+Changes the permissions of the file to be readable only by the owner. This is required to ensure the private key file is secure.<br>
 ```
 chmod 0400 EC2Tutorial.pem
 ```
