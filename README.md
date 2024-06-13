@@ -259,3 +259,21 @@ SSH (Secure Shell) is a protocol for securely accessing and managing remote comp
 • Encrypted Communication: Protects data in transit using encryption.<br>
 • File Transfer: Securely transfer files using tools like scp and sftp.<br>
 • Port Forwarding: Securely forward network traffic.<br>
+
+#### How to SSH into EC2 Instance
+Initial SSH Attempt<br>
+```
+ssh -i EC2Tutorial.pem ec2-user@18.144.86.136
+```
+Warning: 'Permissions 0644 for 'EC2Tutorial.pem' are too open.': The permissions on the private key file are too permissive. SSH requires that private key files are not accessible by others for security reasons.<br>
+
+
+Fixing Permissions, Changes the permissions of the file to be readable only by the owner. This is required to ensure the private key file is secure.<br>
+```
+chmod 0400 EC2Tutorial.pem
+```
+
+Successful SSH Connection<br>
+```
+ssh -i EC2Tutorial.pem ec2-user@18.144.86.136
+```
