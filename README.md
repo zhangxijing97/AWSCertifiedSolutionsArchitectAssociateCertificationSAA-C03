@@ -283,3 +283,8 @@ Successful SSH Connection<br>
 ```
 ssh -i EC2Tutorial.pem ec2-user@18.144.86.136
 ```
+
+Displays the current username that you are logged in as<br>
+```
+whoami
+```
