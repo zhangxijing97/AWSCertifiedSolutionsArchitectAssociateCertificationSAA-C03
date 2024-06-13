@@ -244,7 +244,7 @@ They regulate:<br>
 • 443 = HTTPS – access secured websites<br>
 • 3389 = RDP (Remote Desktop Protocol) – log into a Windows instance<br>
 
-### SSH
+### SSH (Secure Shell)
 #### Shell
 A shell is a command-line interface that allows users to interact with an operating system by typing commands. It interprets these commands and executes them. Shells can be used for:<br>
 • Running Commands: Directly executing commands like ls to list files.<br>
