@@ -4,6 +4,7 @@
 
 1. [IAM & AWS CLI](#1-IAM-and-AWS-CLI)
 2. [Amazon EC2 Basics](#2-Amazon-EC2-Basics)
+3. [Amazon EC2 Solutions Architect Associate Level](#2-Amazon-EC2-Solutions-Architect-Associate-Level)
 
 ## 1. IAM and AWS CLI
 ### IAM: Users & Groups
@@ -288,3 +289,58 @@ Displays the current username that you are logged in as<br>
 ```
 whoami
 ```
+
+```
+aws --version
+```
+
+## 3. Amazon EC2 Solutions Architect Associate Level
+
+### Private vs Public vs Elastic IP
+
+Step1: Create a Elastic IP<br>
+Step2: Associate Elastic IP address<br>
+
+### Placement Groups
+
+#### **Cluster Placement Group**
+- **Description**: Instances are placed close together in a single **Availability Zone (AZ)** for high-performance networking.
+- **Pros**:
+  - Extremely **low latency** and **high throughput** (up to 10 Gbps with enhanced networking).
+- **Cons**:
+  - If the **AZ fails**, all instances in the cluster are impacted.
+- **Best Use Case**:
+  - **Big Data jobs** or applications requiring fast, high-performance communication (e.g., High-Performance Computing workloads).
+
+---
+
+#### **Spread Placement Group**
+- **Description**: Instances are placed on **separate physical hardware** and can span multiple **AZs** for fault tolerance.
+- **Pros**:
+  - **High availability** by reducing the risk of simultaneous failures.
+- **Cons**:
+  - Limited to **7 instances per AZ** in a placement group.
+- **Best Use Case**:
+  - **Critical applications** where each instance must be isolated from hardware failures (e.g., production workloads).
+
+---
+
+#### **Partition Placement Group**
+- **Description**: Instances are divided into **partitions**, each partition being isolated on separate racks. Can span multiple **AZs**.
+- **Pros**:
+  - Limits the impact of failures to only the instances in the affected partition.
+  - Supports **100s of instances**.
+  - Partition metadata is available to instances for optimization.
+- **Best Use Case**:
+  - **Distributed systems** (e.g., HDFS, HBase, Cassandra, Kafka) requiring fault isolation and scalability.
+
+---
+
+#### **Quick Comparison Table**
+
+| **Placement Group Type** | **AZ Scope**   | **Failure Impact**               | **Instance Limit**      | **Best For**                                      |
+|---------------------------|----------------|-----------------------------------|--------------------------|--------------------------------------------------|
+| **Cluster**               | Single AZ      | AZ-wide failure impacts all      | No specific limit        | High-performance, low-latency workloads          |
+| **Spread**                | Multiple AZs   | Hardware failure impacts one     | 7 instances per AZ       | High availability, fault isolation for critical apps |
+| **Partition**             | Multiple AZs   | Partition failure impacts only its instances | 100s of instances    | Scalable distributed systems (e.g., Kafka, HDFS) |
+
